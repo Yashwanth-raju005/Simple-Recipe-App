@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+.searchBar{
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    margin-top: 22px;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.searchBar input{
+    width: 400px;
+    padding: 9px;
+    font-size: 22px;
+    border: none;
+    background-color: #e7e7e7;
+    border-radius: 6px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.searchBar button{
+    width: 90px;
+    background-color: rgb(31, 201, 220);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.headings{
+    text-align: center;
 }
-
-.App-link {
-  color: #61dafb;
+.meals{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 10px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card img{
+    width: 300px;
+    height: 300px;
+    border-radius: 14px;
+    background-size: cover;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+.card button{
+   margin-left: 90px;
+    width: 140px;
+    height: 40px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    border-radius: 14px;
+    border: none;
+    background-color: rgb(31, 201, 220);
+    cursor: pointer;
+}
+.card p{
+   text-align: center;
+}
+.card{
+    margin: 100px 0px 0px 40px;
+    border: none;
+   border-radius: 14px;
+   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+.err{
+    text-align: center;
+    margin-top: 40px
+   
+}
+.mealInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 100px 50px 0px 50px;
+    align-items: center;
+    border: 2px solid black;
+    background-color: rgba(209, 209, 21, 0.841);
+    border-radius: 20px;
+}
+.mealInfo img{
+    width: 300px;
+    height: 300px;
+    margin: 0px 40px;
+    border-radius: 14px;
+    
+}
+.mealInfo img:hover{
+    transform: scale(1.1);
+    transition: 2s;
+}
+.info{
+    margin-left: 70px;
+}
+.info button{
+    width: 200px;
+    height: 60px;
+    font-size: 15px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    background-color: rgb(16, 78, 78);
+    border: none;
+    outline: none;
+    border-radius: 12px;
+    color: white;
+}
+.info h3{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.info p{    
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 17px;
+}
+.headings p{
+    font-size: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
